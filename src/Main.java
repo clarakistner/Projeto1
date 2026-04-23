@@ -31,6 +31,8 @@ public class Main {
             String nomeCliente;
 
             if (opcaoMenu == menu[0]) {
+                itensPedido.clear();
+                valorTotalItens = 0;
                 System.out.println("Nome do cliente: ");
                 nomeCliente = s.nextLine();
 
