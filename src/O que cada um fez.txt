@@ -1,0 +1,53 @@
+O que cada um fez:
+clara: Opção 1, planejamento do projeto, junção do código, correção de bugs e auxílio dos participantes.
+Henrique: Opção 2, planejamento do projeto, identificação de problemas e testes essenciais
+Caio: Opção 3, planejamento do projeto e fluxograma.
+Jéssica: Opção 4 e planejamento do projeto.
+Andrey: fluxograma e testes.
+
+Descrição do código
+
+Inicializamos as variáveis que vamos utilizar ao longo do código todo. E também criamos uma variável de controle para o menu principal
+
+Digamos que o código inteiro fica envolvido num while que vai exibir o menu principal, pedir ao usuário a opção do menu que ele quer e continuar exibindo o menu enquanto ele não escolher a opção 0.
+
+Opção 1 - Novo pedido
+- Limpar o array list de pedidos para iniciar um novo pedido
+- Zerar o valor total dos itens para calcular o valor total correto do novo pedido
+- Pedir e armazenar o nome do cliente
+- exibir o cardápio da lanchonete
+- vai criar um loop para adicionar itens ao pedido
+- dentro do loop vai solicitar o código do item que ele deseja adicionar ao pedido
+- se o código for inválido, o sistema vai exibir uma mensagem de erro e voltar a solicitar o código
+- vai adicionar o código do item ao array de pedidos
+- vai exibir uma mensagem informando que o item foi adicionado ao pedido
+- vai perguntar se quer adicionar mais itens
+- enquanto a string digitada for diferente de S ou N, o sistema informa a opção inválida e solicita a opção de novo
+- se a opção for N o loop de adição de pedidos quebra e ele vai exibir o resumo do pedido com o nome do cliente, um loop percorrendo e exibindo os itens do pedido e o valor total dos itens no pedido.
+- volta ao menu principal
+
+Opção 2 - Consultar Cardápio por Categoria
+- vai exibir um submenu com as categorias dos itens e solicitar a opção do submenu
+- para cada caso, ele vai exibir a categoria específica e voltar ao menu principal
+- caso a opção do submenu seja inválida, o usuário é redirecionado ao menu principal
+
+Opção 3 - Exibir o troco
+- vai exibir ao usuário o valor total dos itens
+- vai solicitar o valor pago
+- enquanto o valor pago for menor que o valor total, vai continuar pedindo o valor pago
+- vai exibir o troco e voltar ao menu principal
+
+Opção 4 - Sorteio do dia
+- vai sortear um número de 1 até 7
+- vai percorrer todos os itens do pedido
+- se o código do pedido for igual ao número sorteado ele vai pegar o valor total dos itens, vai diminuir o valor daquele item e somar ele de novo depois de multiplicar por 0,8
+- vai repetir essa verificação até o último item do pedido
+- vai exibir qual item for sorteado
+- vai informar o valor total após o calculo do desconto e voltar ao menu principal
+
+Opção 0 - Encerrar
+- se a opção escolhida pelo usuário for 0, nossa variável de controle encerrar recebe 0 e encerra o programa
+
+verificação adicional:
+se a opção escolhida no menu principal for inválida o sistema retorna ao início do while
+
